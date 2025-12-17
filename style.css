@@ -1,56 +1,17 @@
-/* PROJECTS */
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
-}
-
-.project-card {
-    background: #fff;
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid #e5e7eb;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
-}
-
-.project-card h3 {
-    margin-top: 0;
-    font-size: 20px;
-    font-weight: 600;
-    color: #222;
-}
-
-.project-card p {
-    color: #555;
-    font-size: 15px;
-    line-height: 1.5;
-}
-
-.stack {
-    font-size: 14px;
-    color: #777;
-    margin-top: 10px;
-}
-
 /* Project images wrapper */
 .project-images {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr)); /* 6 per row */
-    gap: 6px; /* subtle gap */
-    justify-items: center;
+    grid-template-columns: repeat(6, 1fr); /* 6 per row */
+    grid-auto-rows: auto;
+    gap: 8px; /* subtle gap */
     margin: 15px 0 10px 0;
+    justify-items: center;
 }
 
+/* Images */
 .project-images img {
     width: 100%;
-    max-width: 120px;
+    max-width: 110px;  /* slightly smaller */
     height: auto;
     border-radius: 6px;
     box-shadow: 0 2px 6px rgba(0,0,0,0.08);
@@ -62,31 +23,27 @@
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
 }
 
-/* RESPONSIVE ADJUSTMENTS */
+/* RESPONSIVE */
 @media screen and (max-width: 1200px) {
     .project-images {
-        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 per row */
+        grid-template-columns: repeat(4, 1fr);
     }
 }
 
 @media screen and (max-width: 992px) {
     .project-images {
-        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 per row */
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
 @media screen and (max-width: 768px) {
     .project-images {
-        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row on mobile */
-    }
-
-    .project-card {
-        padding: 20px;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media screen and (max-width: 480px) {
     .project-images {
-        grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 per row on tiny screens */
+        grid-template-columns: repeat(1, 1fr);
     }
 }
