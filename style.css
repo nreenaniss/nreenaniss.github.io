@@ -166,8 +166,8 @@ nav ul li a:hover {
 /* Project images wrapper */
 .project-images {
     display: grid;
-    grid-template-columns: repeat(6, 1fr); /* 6 images per row */
-    gap: 10px;
+    grid-template-columns: repeat(6, minmax(0, 1fr)); /* 6 images per row */
+    gap: 5px; /* smaller gap */
     justify-items: center;
     margin-bottom: 15px;
 }
@@ -229,7 +229,13 @@ footer {
 /* RESPONSIVE ADJUSTMENTS */
 @media screen and (max-width: 1200px) {
     .project-images {
-        grid-template-columns: repeat(4, 1fr); /* 4 per row */
+        grid-template-columns: repeat(4, minmax(0, 1fr)); /* 4 per row */
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .project-images {
+        grid-template-columns: repeat(3, minmax(0, 1fr)); /* 3 per row */
     }
 }
 
@@ -251,20 +257,16 @@ footer {
     }
 
     .project-images {
-        grid-template-columns: repeat(3, 1fr); /* 3 per row */
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 per row on mobile */
     }
 
     .project-images img {
-        max-width: 90px; /* smaller on mobile */
+        max-width: 90px;  /* smaller on mobile */
     }
 }
 
 @media screen and (max-width: 480px) {
     .project-images {
-        grid-template-columns: repeat(2, 1fr); /* 2 per row on very small screens */
-    }
-
-    .project-images img {
-        max-width: 70px;
+        grid-template-columns: repeat(1, minmax(0, 1fr)); /* 1 per row on tiny screens */
     }
 }
