@@ -185,6 +185,26 @@ nav ul li a:hover {
     transform: scale(1.05);
 }
 
+/* Project images layout */
+.project-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-images img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
 /* EXPERIENCE */
 .exp-box {
     background: white;
