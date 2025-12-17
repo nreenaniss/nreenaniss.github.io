@@ -163,40 +163,21 @@ nav ul li a:hover {
     color: #777;
 }
 
-.project-link {
-    display: inline-block;
-    margin-top: 10px;
-    text-decoration: none;
-    color: #6e55ff;
-    font-weight: 600;
-}
-
-/* PROJECT IMAGES */
-.project-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-}
-
-.project-card img:hover {
-    transform: scale(1.05);
-}
-
-/* Project images layout */
+/* Project images wrapper */
 .project-images {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
     margin-bottom: 15px;
 }
 
 .project-images img {
     width: 100%;
+    max-width: 180px; /* max width so images are smaller */
     height: auto;
     border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -261,5 +242,9 @@ footer {
 
     .skills-grid, .project-grid {
         gap: 15px;
+    }
+
+    .project-images img {
+        max-width: 140px;
     }
 }
