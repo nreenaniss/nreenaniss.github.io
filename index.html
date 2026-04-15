@@ -5,149 +5,181 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nureen Anis | Portfolio</title>
 
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<header>
-    <nav>
-        <h1 class="logo">Nureen Anis</h1>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h1 class="logo">Nureen Anis</h1>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- HERO -->
-<section class="hero">
-    <div class="hero-content">
-        <h2>Hello, I'm <span class="highlight">Nureen Anis</span></h2>
+    <!-- HERO -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hello, I’m <span class="highlight">Nureen Anis</span></h2>
+            <p class="subtitle">System Analyst at HeiTech Padu Berhad | Final-Year Software Engineering Student (Information System Development) | Universiti Kebangsaan Malaysia</p>
 
-        <p class="subtitle">
-            System Analyst | Software Engineering Student | Web & Mobile Developer
-        </p>
+            <p class="desc">
+                <p class="desc">
+                I focus on building structured and practical digital solutions through system analysis, 
+                documentation, and application development. I have experience in UI/UX design and 
+                developing web and mobile applications, and I enjoy turning ideas and requirements 
+                into functional systems.
+                </p>
+            </p>
 
-        <p class="desc">
-            I build structured digital solutions through system analysis, documentation, and application development.
-            I enjoy turning requirements and ideas into practical, user-focused systems.
-        </p>
-
-        <div class="hero-buttons">
-            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#projects" class="btn-primary">View My Work</a>
             <a href="resume/Nureen_Anis_Resume.pdf" class="btn-outline" download>Download Resume</a>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-    <h2 class="section-title">About Me</h2>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-desc">
+            I am a final-year Software Engineering student at Universiti Kebangsaan Malaysia 
+            currently working as a System Analyst at HeiTech Padu Berhad. My experience includes 
+            system analysis, requirement documentation, and developing web and mobile applications 
+            using technologies such as Flutter, JavaScript, Laravel, and Firebase. 
 
-    <p class="section-desc">
-        Final-year Software Engineering student at Universiti Kebangsaan Malaysia currently working as a System Analyst at HeiTech Padu Berhad.  
-        Experienced in system analysis, requirement documentation, and web/mobile development using Flutter, JavaScript, Laravel, and Firebase.  
-        Passionate about transforming user requirements into structured and practical digital solutions.
-    </p>
-</section>
+            I enjoy turning user requirements and ideas into structured, practical digital solutions.
+        </p>
+    </section>
 
-<!-- SKILLS -->
-<section id="skills" class="section">
-    <h2 class="section-title">Skills & Tools</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+        <h2 class="section-title">Skills & Tools</h2>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Programming</h3>
-            <p>PHP, Dart, JavaScript, Python, SQL</p>
+        <div class="skills-grid">
+            <div class="skill-box">
+                <h3>Programming Languages</h3>
+                <p>PHP, Dart, Python, JavaScript, SQL, HTML, CSS</p>
+            </div>
+            <div class="skill-box">
+                <h3>Web & App Development</h3>
+                <p>Flutter, Firebase, Laravel, Bootstrap, jQuery, Android Studio</p>
+            </div>
+            <div class="skill-box">
+                <h3>Databases & Query Tools</h3>
+                <p>MySQL, Oracle, Firebase Firestore, DBeaver, phpMyAdmin, Microsoft Access</p>
+            </div>
+            <div class="skill-box">
+                <h3>Tools & IDEs</h3>
+                <p>Visual Studio Code, Eclipse IDE, GitHub</p>
+            </div>
+            <div class="skill-box">
+                <h3>Design & Modelling</h3>
+                <p>Figma, Draw.io</p>
+            </div>
+            <div class="skill-box">
+                <h3>Data & Analytics</h3>
+                <p>Power BI, RapidMiner</p>
+            </div>
+            <div class="skill-box">
+                <h3>Office & Collaboration</h3>
+                <p>Microsoft Word, Microsoft Excel, Microsoft SharePoint</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Project</h2>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Panic Button UKM</h3>
+
+                <!-- Project images -->
+                <div class="project-images">
+                    <img src="images/panic-button/login.jpg" alt="Login Screen">
+                    <img src="images/panic-button/home.jpg" alt="Home Screen">
+                    <img src="images/panic-button/emergency_type.jpg" alt="Emergency Type">
+                    <img src="images/panic-button/contacts.jpg" alt="Contacts Screen">
+                    <img src="images/panic-button/emergency_guides.jpg" alt="Emergency Guides">
+                    <img src="images/panic-button/emergency_info.jpg" alt="Emergency Info">
+                    <img src="images/panic-button/past_emergency.jpg" alt="Past Emergency">
+                    <img src="images/panic-button/admin_home.jpg" alt="Admin Home Screen">
+                    <img src="images/panic-button/emergency_alerts.jpg" alt="Emergency Alerts">
+                    <img src="images/panic-button/emergency_alerts2.jpg" alt="Emergency Alerts Info">
+                    <img src="images/panic-button/guides.jpg" alt="Emergency Contacts">
+                    <img src="images/panic-button/locations.jpg" alt="Emergency Contacts">
+                </div>
+
+                <p>
+                    A mobile application developed for UKM students that allows users
+                    to trigger emergency alerts and access safety guides during
+                    critical situations.
+                </p>
+                <p class="stack">Tech: Flutter, Dart, Firebase</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <h2 class="section-title">Experience</h2>
+
+        <div class="exp-box">
+            <h3>System Analyst</h3>
+            <p class="exp-company">HeiTech Padu Berhad • Feb 2026 - Present</p>
+            <p class="exp-project"><strong>Project:</strong> National Integrated Immigration System (NIISe)</p>
+            <ul>
+                <li>Support ongoing system analysis activities for a national-level immigration platform used by government agencies.</li>
+                <li>Prepare and update technical and functional documentation, ensuring changes are properly reflected in system design documents.</li>
+                <li>Address review feedback from project stakeholders and implement revisions to improve documentation quality and consistency.</li>
+                <li>Take part in project discussions, meetings, and workshops to understand system processes and resolve documentation or requirement issues.</li>
+                <li>Work closely with analysts, developers, and other team members to clarify system behaviour and ensure documentation aligns with implemented features.</li>
+            </ul>
         </div>
 
-        <div class="card">
-            <h3>Frameworks</h3>
-            <p>Flutter, Laravel, Bootstrap</p>
+        <div class="exp-box">
+            <h3>System Analyst (Internship)</h3>
+            <p class="exp-company">HeiTech Padu Berhad • Sept 2025 - Jan 2026</p>
+            <p class="exp-project"><strong>Project:</strong> National Integrated Immigration System (NIISe)</p>
+            <ul>
+                <li>Contributed to a large-scale government system supporting Malaysia’s immigration services.</li>
+                <li>Assisted in the preparation and maintenance of Software Design Specification (SDS) documentation.</li>
+                <li>Reviewed and refined documentation based on IV&V feedback to ensure clarity, accuracy, and compliance with project standards.</li>
+                <li>Gained exposure to system architecture, workflows, and SDLC practices within an enterprise environment.</li>
+                <li>Explored database schemas using DBeaver to understand table structures, relationships, and data organization.</li>
+            </ul>
         </div>
+    </section>
 
-        <div class="card">
-            <h3>Database</h3>
-            <p>MySQL, Firebase, Oracle</p>
-        </div>
-
-        <div class="card">
-            <h3>Tools</h3>
-            <p>Figma, GitHub, VS Code, DBeaver</p>
-        </div>
-    </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="section">
-    <h2 class="section-title">Projects</h2>
-
-    <div class="project-card">
-        <h3>Panic Button UKM</h3>
-
-        <div class="project-images">
-            <img src="images/panic-button/login.jpg" alt="Login screen">
-            <img src="images/panic-button/home.jpg" alt="Home screen">
-            <img src="images/panic-button/emergency_type.jpg" alt="Emergency type">
-            <img src="images/panic-button/contacts.jpg" alt="Contacts screen">
-        </div>
-
-        <p>
-            Mobile emergency alert system for UKM students with real-time alerts and safety guidance features.
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">
+            Feel free to reach out for opportunities or collaborations.
         </p>
 
-        <p class="stack">Flutter • Dart • Firebase</p>
-    </div>
-</section>
+        <div class="contact-links">
+            <a href="mailto:nreenanis@gmail.com" target="_blank">📧 Email</a>
+            <a href="https://www.linkedin.com/in/nreenanis/" target="_blank">🔗 LinkedIn</a>
+        </div>
+    </section>
 
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-    <h2 class="section-title">Experience</h2>
-
-    <div class="card">
-        <h3>System Analyst</h3>
-        <p class="company">HeiTech Padu Berhad • Feb 2026 - Present</p>
-        <p class="project">Project: National Integrated Immigration System (NIISe)</p>
-
-        <ul>
-            <li>System analysis and documentation support</li>
-            <li>Assist SDLC processes and stakeholder requirements</li>
-            <li>Improve technical documentation based on feedback</li>
-        </ul>
-    </div>
-
-    <div class="card">
-        <h3>System Analyst Intern</h3>
-        <p class="company">HeiTech Padu Berhad • Sept 2025 - Jan 2026</p>
-        <p class="project">Project: National Integrated Immigration System (NIISe)</p>
-
-        <ul>
-            <li>Assisted in Software Design Specification (SDS) documentation</li>
-            <li>Reviewed IV&V feedback and implemented updates</li>
-            <li>Learned system architecture and workflow processes</li>
-        </ul>
-    </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-    <h2 class="section-title">Contact</h2>
-
-    <div class="contact">
-        <a href="mailto:nreenanis@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/nreenanis/">LinkedIn</a>
-        <a href="https://github.com/">GitHub</a>
-    </div>
-</section>
-
-<footer>
-    <p>© 2025 Nureen Anis</p>
-</footer>
+    <footer>
+        <p>© 2025 Nureen Anis. All Rights Reserved.</p>
+    </footer>
 
 </body>
 </html>
