@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Inter', sans-serif;
-    background: #f8fafc;
-    color: #0f172a;
+    background: #ffffff;
+    color: #111827;
     line-height: 1.7;
 }
 
@@ -15,9 +15,8 @@ body {
 header {
     position: sticky;
     top: 0;
-    background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px);
-    border-bottom: 1px solid #e2e8f0;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
     z-index: 1000;
 }
 
@@ -43,10 +42,9 @@ nav ul {
 }
 
 nav a {
-    color: #475569;
+    color: #374151;
     text-decoration: none;
     font-size: 14px;
-    transition: 0.2s;
 }
 
 nav a:hover {
@@ -61,14 +59,13 @@ nav a:hover {
     justify-content: center;
     text-align: center;
     padding: 0 20px;
-    background: linear-gradient(180deg, #ffffff 0%, #f1f5f9 100%);
+    background: #ffffff;
 }
 
 .hero h2 {
     font-size: 52px;
     font-weight: 700;
     letter-spacing: -1px;
-    color: #0f172a;
 }
 
 .highlight {
@@ -78,13 +75,13 @@ nav a:hover {
 .subtitle {
     margin-top: 12px;
     font-size: 16px;
-    color: #64748b;
+    color: #6b7280;
 }
 
 .desc {
     max-width: 650px;
     margin: 20px auto 0;
-    color: #475569;
+    color: #4b5563;
     font-size: 15px;
 }
 
@@ -101,7 +98,7 @@ nav a:hover {
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
-    transition: 0.25s;
+    transition: 0.2s;
     margin: 0 6px;
 }
 
@@ -112,7 +109,7 @@ nav a:hover {
 
 .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
 }
 
 .btn-outline {
@@ -135,10 +132,9 @@ nav a:hover {
     font-size: 28px;
     text-align: center;
     margin-bottom: 30px;
-    color: #0f172a;
 }
 
-/* GRID CARDS */
+/* CARDS */
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -146,34 +142,34 @@ nav a:hover {
 }
 
 .card {
-    background: white;
-    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: 18px;
-    transition: 0.25s;
+    transition: 0.2s;
 }
 
 .card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     border-color: #2563eb;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h3 {
-    color: #0f172a;
     font-size: 15px;
     margin-bottom: 6px;
+    color: #111827;
 }
 
 .card p {
-    color: #475569;
     font-size: 14px;
+    color: #6b7280;
 }
 
 /* PROJECT */
 .project-card {
-    background: white;
-    border: 1px solid #e2e8f0;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
     border-radius: 14px;
     padding: 20px;
 }
@@ -181,7 +177,6 @@ nav a:hover {
 .project-card h3 {
     font-size: 22px;
     margin-bottom: 10px;
-    color: #0f172a;
 }
 
 .project-images {
@@ -194,18 +189,12 @@ nav a:hover {
 .project-images img {
     width: 120px;
     border-radius: 10px;
-    transition: 0.25s;
-    border: 1px solid #e2e8f0;
+    border: 1px solid #e5e7eb;
+    transition: 0.2s;
 }
 
 .project-images img:hover {
-    transform: scale(1.06);
-}
-
-.stack {
-    color: #2563eb;
-    font-weight: 600;
-    font-size: 13px;
+    transform: scale(1.05);
 }
 
 /* EXPERIENCE */
@@ -216,14 +205,14 @@ nav a:hover {
 }
 
 .project {
-    color: #64748b;
+    color: #6b7280;
     font-size: 13px;
     margin-bottom: 10px;
 }
 
 .card ul {
     padding-left: 18px;
-    color: #475569;
+    color: #4b5563;
     font-size: 14px;
 }
 
@@ -242,12 +231,11 @@ nav a:hover {
 .contact a {
     padding: 10px 16px;
     border-radius: 10px;
-    border: 1px solid #cbd5e1;
+    border: 1px solid #d1d5db;
     color: #2563eb;
     text-decoration: none;
     font-size: 14px;
-    transition: 0.2s;
-    background: white;
+    background: #ffffff;
 }
 
 .contact a:hover {
@@ -259,24 +247,7 @@ nav a:hover {
 footer {
     text-align: center;
     padding: 30px;
-    color: #64748b;
-    border-top: 1px solid #e2e8f0;
+    color: #6b7280;
+    border-top: 1px solid #e5e7eb;
     margin-top: 60px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .hero h2 {
-        font-size: 36px;
-    }
-
-    nav ul {
-        gap: 12px;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .project-images img {
-        width: 100px;
-    }
 }
